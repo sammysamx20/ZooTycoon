@@ -12,6 +12,7 @@ For this assignment, you will implement a small game where the player acts as th
 Each species of animal has these specific traits:
   * **Age**
     * For all species, an animal is an adult if it is at least 3 years old.
+    * For all species, an animal is a baby if it is less than 30 days old.
   * **Cost**
     * Monkeys cost $15,000 each.
     * Sea otters cost $5,000 each.
@@ -27,8 +28,8 @@ Each species of animal has these specific traits:
     * Sloths have a daily food cost equal to the base food cost.
   * **Revenue**
     * Each animal generates daily revenue equal to a percentage of the initial cost of one of its species.
-      * All animals except monkeys generate 5% of the cost of one of their species.
-      * Each monkey generates 10% of the cost of a monkey.
+      * All animals except monkeys generate 5% of the cost of one of their species (i.e. each sea otter generates $250 each day, and each sloth generates $100 each day).
+      * Each monkey generates 10% of the cost of a monkey (i.e. each monkey generates $1500 each day).
     * On certain days, when attendance is high, each monkey generates some amount of bonus revenue.  See below for details.
 
 ## Game flow
@@ -41,7 +42,7 @@ The game starts with the owner having no animals and $100,000 in the bank, and i
 
   3. The owner must pay the feeding cost for each animal in the zoo (including any they just bought).  The cost of food for each animal is calculated using the base cost of food.  This starts out as $50.  Each day, the base cost changes to a random value between 75% and 125% of the base cost from the day before.  Once the cost of food for each animal is calculated, this amount is subtracted from the owner's bank account.
 
-  4. A random event occurs.  The random event can be one of the following:
+  4. A special event occurs.  The special event is chosen at random from among the following:
     * One randomly chosen animal gets sick.  In order to care for the sick animal, the owner must pay an amount equal to half the initial cost of an animal of the same species as the sick animal (e.g. a sick monkey costs half of $15,000, i.e. $7,500).  If the owner has enough money to cover this cost, it is subtracted from their bank account.  If they do not have enough money, then the sick animal dies and is removed from the zoo.
 
     * A randomly chosen adult animal gives birth to the appropriate number of babies for its species (a non-adult can't have babies).  Each baby starts with age 0 and is added into the zoo.
@@ -63,11 +64,13 @@ In addition to the specifications above, your game must have these features:
 
 * You must use inheritance: the classes for monkey, sea otter, and sloth must inherit some traits and behaviors from the animal class, though each of them may also have unique traits or behaviors, as well (e.g. the bonus payout for monkeys).
 
+* Within your zoo, the exhibit of each species of animal must be represented as a dynamically-allocated array of objects of the appropriate class.
+
 * Your program should implement the game flow described above.  The player may play one day at a time until they choose to quit the came.  At the beginning of each day, you should let the player know how much money they have in the bank and how many adults (>= 3 years old) and babies (< 30 days old) they have of each species.
 
 * Your program may not have any memory leaks.
 
-* Your program must be factored into interface, implementation, and application.  Specifically, you should have one header file and one implementation file for each class, and you should have a single application file containing your `main()` function.  You should also write a `Makefile` that specifies compilation for your program.
+* Your program must be factored into interface, implementation, and application.  Specifically, you should have one header file and one implementation file for each class, and you should have a single application file containing your `main()` function.  You should also write a makefile that specifies compilation for your program.
 
 ## Code style
 
@@ -83,6 +86,7 @@ To submit your program, you need to make sure the following files are committed 
   * The `.cpp` file containing your application code.
   * All of the `.hpp` and `.cpp` files containing the interface and implementation of your classes.
   * Your `Makefile`.
+
 Do not commit any other files (other than the ones that were already in your repository at the start of the assignment).  A good way to check whether your assignment is submitted is to simply look at your repo on github.com.  If your files appear there before the deadline, they they are submitted.
 
 ## Grading criteria
