@@ -17,6 +17,22 @@
 #include<ctime>
 #include<iostream>
 #include<cmath>
+
+
+
+
+/***********************
+ ** Function: Sloth::Sloth()
+ ** Description: constructer  for sloth class
+ ** Parameters: None
+ ** Pre: None
+ ** Post: None
+ ******************************************/
+
+
+
+
+
 Sloth::Sloth(){
 	age = 3;
 	cost= 50; 
@@ -30,6 +46,16 @@ Sloth::Sloth(int age){
 	cost = 50;
 	revenue = 100;
 }
+
+
+/***********************
+ ** Function: Sloth::get_cost()
+ ** Description: accessor  for sloth class
+ ** Parameters: None
+ ** Pre: None
+ ** Post: None
+ *******************************************/
+
 
 float Sloth::get_cost(){
 	return cost;

@@ -12,6 +12,19 @@
 
 #include"seal.hpp"
 
+
+
+/***********************
+ ** Function: Seal::Seal()
+ ** Description: constructor  for seal class
+ ** Parameters: None
+ ** Pre: None
+ ** Post: None
+ *******************************************/
+
+
+
+
 Seal::Seal(){
 	age = 3;
 	cost= 50; 
@@ -24,6 +37,18 @@ Seal::Seal(int age){
 	cost = 50;
 	revenue = 100;
 }
+
+
+
+/***********************
+ ** Function: Seal::get_cost()
+ ** Description: accessor  for seal class
+ ** Parameters: None
+ ** Pre: None
+ ** Post: None
+ *  ******************************************/
+
+
 
 float Seal::get_cost(){
 	return cost;

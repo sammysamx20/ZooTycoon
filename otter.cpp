@@ -12,6 +12,17 @@
 
 #include"otter.hpp"
 
+
+/***********************
+ ** Function: Otter::Otter()
+ ** Description: Constructer for otter class
+ ** Parameters: None
+ ** Pre: None
+ ** Post: None
+ *******************************************/
+
+
+
 Otter::Otter(){
 	age = 3;
 	cost= 50; 
@@ -24,6 +35,17 @@ Otter::Otter(int age){
 	cost = 50;
 	revenue = 250;
 }
+
+
+/***********************
+ ** Function: Otter::get_cost()
+ *  Description: accessor  for otter class
+ ** Parameters: None
+ *  Pre: None
+ ** Post: None
+ ********************************************/
+
+
 
 float Otter::get_cost(){
 	return cost;
