@@ -1,3 +1,13 @@
+/*****************************************
+ * Program: Monkey.cpp
+ * Author: Sam Young
+ * Date: 2/20/2017
+ * Description: Accesses and mutates variables in the monkey class
+ * Input: None
+ * Output: Age cost revenue
+ * *****************************************/
+
+
 #include"monkey.hpp"
 
 Monkey::Monkey(){
@@ -10,7 +20,7 @@ Monkey::Monkey(){
 
 Monkey::Monkey(int age){
 	this ->age = age;
-	cost = 20;
+	cost = 50;
 	revenue = 1500;
 }
 

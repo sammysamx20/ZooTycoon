@@ -1,3 +1,13 @@
+/***********************************
+ * Program: animal.cpp
+ * Author: Sam Young
+ * Date 2/20/2017
+ * Description: Acceses and mutates variables in the animal class
+ * Input: None
+ * Output: None
+ * ***********************************/
+
+
 #include<iostream>
 #include "animal.hpp"
 

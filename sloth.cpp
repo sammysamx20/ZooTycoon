@@ -1,3 +1,17 @@
+/***************************************
+ ** Program: sloth.cpp
+ ** Author: Sam Young
+ ** Date: 2/20/2017
+ ** Description: A sloth child class that holds special info for sloth
+ ** Input: None
+ ** Output: Sloth cost, revenue
+ ** *************************************/
+
+
+
+
+
+
 #include"sloth.hpp"
 #include<cstdlib>
 #include<ctime>
@@ -13,7 +27,7 @@ Sloth::Sloth(){
 
 Sloth::Sloth(int age){
 	this ->age =age;
-	cost = 20;
+	cost = 50;
 	revenue = 100;
 }
 

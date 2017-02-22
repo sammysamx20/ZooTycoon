@@ -1,35 +1,35 @@
 
 /*****************************************
- ** Program: otter.cpp
+ ** Program: seal.cpp
  ** Author: Sam Young
  ** Date: 2/20/2017
- ** Description: Accesses and mutates variables in the otter  class
+ ** Description: Accesses and mutates variables in the seal class
  ** Input: None
  ** Output: Age cost revenue
  ******************************************/
 
 
 
-#include"otter.hpp"
+#include"seal.hpp"
 
-Otter::Otter(){
+Seal::Seal(){
 	age = 3;
 	cost= 50; 
-	revenue = 250;
+	revenue = 100;
 	dayage = 0;
 }
 
-Otter::Otter(int age){
+Seal::Seal(int age){
 	this ->age =age;
 	cost = 50;
-	revenue = 250;
+	revenue = 100;
 }
 
-float Otter::get_cost(){
+float Seal::get_cost(){
 	return cost;
 }
 
-float Otter::get_revenue(){
+float Seal::get_revenue(){
 	return revenue;
 }
 

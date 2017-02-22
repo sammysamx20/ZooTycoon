@@ -1,3 +1,13 @@
+/************************************************
+ * Program: monkey.hpp
+ * Author: Sam Young
+ * Date: 2/20/2017
+ * Description: Holds functions and variables for monkey.cpp
+ * Input: None
+ * Output: None
+ * *****************************************************/
+
+
 #ifndef MONKEY_HPP
 #define MONKEY_HPP
 #include"animal.hpp"

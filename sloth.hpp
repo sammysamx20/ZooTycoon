@@ -1,3 +1,15 @@
+/***********************************
+ * Program: sloth.hpp
+ * Author: Sam Young
+ * Date: 2/21/2017
+ * Description: Holds functions for Sloth.cpp
+ * Input: None
+ * Output: None
+ * *************************************/
+
+
+
+
 #ifndef SLOTH_HPP
 #define SLOTH_HPP
 #include "animal.hpp"

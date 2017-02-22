@@ -1,3 +1,14 @@
+/*************************
+ * Program: animal.hpp
+ * Author: Sam Young
+ * Date: 2/20/2017
+ * Description: Class that holds functions and variables for .cpp
+ * Input: None
+ * Output: None
+ * *********************/
+
+
+
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
